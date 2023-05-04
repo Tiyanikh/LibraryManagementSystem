@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>welcome page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Room One Library </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+
+
+        <a th:href="@{/}"class="btn btn-primary btn-sm lg-3">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="form">
+  <form>
+<h1>WELCOME  </h1>
+<p>A very warm welcome to you! It is lovely to have you among us!
+
+  It is our great pleasure to have you on board! A hearty welcome to you!</p>
+  <p>We are glad to welcome you! Your presence is well appreciated, and we are delighted you are here.</p>
+<a th:href="@{/allCustomer}"class="btn btn-primary btn-sm lg-3">Continue</a>
+<a th:href="@{/}"class="btn btn-primary btn-sm lg-3">Cancel</a>
+<style>
+p{
+  color: #ffffff;}
+
+  h1 {
+    color: #930f0f;}
+  body{
+
+    background-image: url('https://miro.medium.com/max/6400/1*qYE6XgnyxXy9HHOeoQGjTw.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100% ;
+  }
+</style>
+</form>
+</div>
+</body>
+</html>
